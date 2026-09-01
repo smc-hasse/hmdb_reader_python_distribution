@@ -1,0 +1,2 @@
+# This project uses the Python standard library only.
+# No third-party packages are required for the GUI or XML scanner.
