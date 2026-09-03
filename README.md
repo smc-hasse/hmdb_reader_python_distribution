@@ -78,6 +78,18 @@ The app can:
 - save results as a TSV file
 - copy the result back to the clipboard
 
+## Discover tags from the XML file
+
+The project includes `discover_hmdb_tags.py` for finding all populated leaf-tag paths in the HMDB XML file. It scans the XML record by record and writes the sorted tag paths to `hmdb_tag_results_all.txt`.
+
+Run this command from the project folder:
+
+```powershell
+py -3 discover_hmdb_tags.py hmdb_metabolites.xml hmdb_tag_results_all.txt
+```
+
+This operation can take some time because the HMDB XML file is very large. It does not download the XML file and it does not change the curated `hmdb_tag_results.txt` file used for the default tag selection.
+
 ## Notes
 
 This project is intended for source distribution only. It is suitable for GitHub sharing and for users in environments where executable packaging is restricted or prohibited.
